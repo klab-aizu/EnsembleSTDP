@@ -1,0 +1,25 @@
+### Compressing model_1_300_neurons_0_to_30000.pth
+
+Method: mse, n_compression: 150, Accuracy: 0.8706, 
+
+Method: mse, n_compression: 200, Accuracy: 0.8613, 
+
+Method: mse, n_compression: 250, Accuracy: 0.7867, 
+
+Method: manhattan, n_compression: 150, Accuracy: 0.8689, 
+
+Method: manhattan, n_compression: 200, Accuracy: 0.8564, 
+
+Method: manhattan, n_compression: 250, Accuracy: 0.764, 
+
+Method: cos, n_compression: 150, Accuracy: 0.869, 
+
+Method: cos, n_compression: 200, Accuracy: 0.8539, 
+
+Method: cos, n_compression: 250, Accuracy: 0.7608, 
+
+Method: corr, n_compression: 150, Accuracy: 0.8685, 
+
+Method: corr, n_compression: 200, Accuracy: 0.8515, 
+
+Method: corr, n_compression: 250, Accuracy: 0.7599, 
