@@ -71,11 +71,13 @@ There is a supplimental shell script to run the training, testing and merging on
 * model_5_100_neurons_24000_to_30000
 
 first, set the parameters as follows in input.txt
-1 0 6000
-2 6000 12000
-3 12000 18000
-4 18000 24000
-5 24000 30000
+1 0 6000<br>
+2 6000 12000<br>
+3 12000 18000<br>
+4 18000 24000<br>
+5 24000 30000<br>
+
+Make sure to add a new line after the final arguments
 
 then edit shell.sh
 ```
