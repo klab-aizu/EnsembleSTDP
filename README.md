@@ -70,7 +70,7 @@ There is a supplimental shell script to run the training, testing and merging on
 * model_4_100_neurons_18000_to_24000
 * model_5_100_neurons_24000_to_30000
 
-first, set the parameters as follows in input.txt
+first, set the parameters as follows in input.txt<br>
 1 0 6000<br>
 2 6000 12000<br>
 3 12000 18000<br>
