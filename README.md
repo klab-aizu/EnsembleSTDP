@@ -58,6 +58,7 @@ The example of visualizing sub-model 1 with 100 neurons, trained from 0 to 6000 
 python eth_mnist_plot.py --model_number 1 --n_neurons 100 --start_image 0 --end_image 6000
 ```
 The receptive field will be saved as receptive_field_model_1_100_neurons_0_to_6000.png
+
 \*note that models trained on GPU cannot be plotted on CPU, or vice versa
 
 
