@@ -46,10 +46,10 @@ To merge and compress the trained sub-models, number of compression and similari
 ```
 python3 eth_mnist_merge.py --method mse --n_compression 100
 ```
-Mean Squired Error (MSE) -> --method mse
-Manhattan Distance -> --method manhattan
-Cosine Similarity -> --method cos
-Correlation Coefficient -> --method corr
+* Mean Squired Error (MSE) -> --method mse
+* Manhattan Distance -> --method manhattan
+* Cosine Similarity -> --method cos
+* Correlation Coefficient -> --method corr
 
 ### Plot 2D-Receptive field
 To visualize the trained weights of a sub-model, run the following command.
