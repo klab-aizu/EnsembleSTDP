@@ -64,7 +64,7 @@ The receptive field will be saved as receptive_field_model_1_100_neurons_0_to_60
 
 ### Training or testing multiple sub-models at once
 There is a supplimental shell script to run the training, testing and merging on a series of command line arguments. For example, to train the following 5 sub-models at once,
-* model_1_100_neurons_0_to_6000 (model 1 with 100 neurons model trained from 0 to 6000 images)
+* model_1_100_neurons_0_to_6000 (model 1 with 100 neurons trained from 0 to 6000 images)
 * model_2_100_neurons_6000_to_12000
 * model_3_100_neurons_12000_to_18000
 * model_4_100_neurons_18000_to_24000
