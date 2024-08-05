@@ -1,6 +1,6 @@
 # EnsembleSTDP
 This is the source code for the paper:
-- Title: EnsembleSTDP: Accelerating Distributed Spike Timing Dependent Plasticity Learning in Spiking Neural Networks
+- Title: EnsembleSTDP:  Distributed Spike Timing Dependent Plasticity Learning in Spiking Neural Networks
 
 
 ### Requirements
@@ -23,7 +23,7 @@ pip install -r requirements.txt
 ## How to use scripts
 Here is how to perform basic operations in ensemble learning
 ### Train sub-model
-An SNN sub-model is defined by the following attributes
+An SNN sub-model is defined by the following attributes:
 
 * model_number
 * n_neurons (number of excitatory neurons)
@@ -42,7 +42,7 @@ python eth_mnist_test.py --model_number 1 --n_neurons 100 --start_image 0 --end_
 ```
 
 ### Merge sub-models
-To merge and compress the trained sub-models, number of compression and similarity measurement need to specified. Before running the command below, make sure all the files of sub-models to be merged (model_*.pth, assignments_*.pth, and proportions_*.pth for each model) are in the models_to_merge folder. The example of the command to merge sub-models using MSE and compress 100 neurons:
+To merge and compress the trained sub-models, the number of compressions and similarity measurements need to be specified. Before running the command below, make sure all the files of sub-models to be merged (model_*.pth, assignments_*.pth, and proportions_*.pth for each model) are in the models_to_merge folder. The example of the command to merge sub-models using MSE and compress 100 neurons:
 ```
 python3 eth_mnist_merge.py --method mse --n_compression 100
 ```
@@ -63,7 +63,7 @@ The receptive field will be saved as receptive_field_model_1_100_neurons_0_to_60
 
 
 ### Training or testing multiple sub-models at once
-There is a supplimental shell script to run the training, testing and merging on a series of command line arguments. For example, to train the following 5 sub-models at once,
+There is a supplemental shell script to run the training, testing, and merging on a series of command line arguments. For example, to train the following 5 sub-models at once,
 * model_1_100_neurons_0_to_6000 (model 1 with 100 neurons trained from 0 to 6000 images)
 * model_2_100_neurons_6000_to_12000
 * model_3_100_neurons_12000_to_18000
@@ -90,7 +90,7 @@ while read -r model_number start_image end_image ; do
     python eth_mnist_train.py --model_number "$model_number" --start_image "$start_image" --end_image "$end_iamge" --n_neurons 100 >> "$output_file"
 done < "$input_file"
 ```
-Finally run
+Finally, run
 ```
 ./shell.sh
 ```
