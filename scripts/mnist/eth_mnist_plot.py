@@ -143,7 +143,7 @@ if gpu:
 weights_im = None
 input_exc_weights = network.connections[("X", "Ae")].w
 square_weights = get_square_weights(  
-    input_exc_weights.view(784, 100), 10, 28
+    input_exc_weights.view(784, n_neurons), n_sqrt, 28
 )
 weights_im = plot_weights(square_weights, im=weights_im)
 plt.savefig(f"receptive_field_{MODEL_NAME}.png")
