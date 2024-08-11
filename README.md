@@ -15,10 +15,23 @@ Below are the steps to set up the environment for this package.
 git clone https://github.com/klab-aizu/EnsembleSTDP
 ```
 
-#### Install the necessary libraries
+#### Install bindsnet
+1. Change directory to the top level of EnsembleSTDP
+2. Clone bindsnet repository
 ```
-pip install -r requirements.txt
+git clone https://github.com/BindsNET/bindsnet
 ```
+3. Change directory to the top level of bindsnet
+4. Make bindsnet editable
+```
+pip install -e .
+```
+5. Go back to the top level of EnsembleSTDP
+4. Move the modified models.py to bindsnet library
+```
+mv models.py bindsnet/bindsnet/models/models.py
+```
+
 
 ## How to use scripts
 Here is how to perform basic operations in ensemble learning
