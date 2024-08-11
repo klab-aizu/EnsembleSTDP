@@ -4,7 +4,7 @@ This is the source code for the paper:
 
 
 ### Requirements
-Python >=3.10, <3.12
+Python <3.11,>=3.8.1
 
 
 ## Set up
