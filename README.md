@@ -1,6 +1,8 @@
 # EnsembleSTDP
 This is the source code for the paper:
-- Title: EnsembleSTDP:  Distributed Spike Timing Dependent Plasticity Learning in Spiking Neural Networks
+- Title: EnsembleSTDP: Distributed in-situ Spike Timing Dependent Plasticity Learning in Spiking Neural Networks
+- Authors: Hanyu Yuga and Khanh N. Dang
+
 
 
 ### Requirements
