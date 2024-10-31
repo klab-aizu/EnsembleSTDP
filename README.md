@@ -18,18 +18,18 @@ git clone https://github.com/klab-aizu/EnsembleSTDP
 ```
 
 #### Install bindsnet
-1. Change directory to the top level of EnsembleSTDP
-2. Clone bindsnet repository
+1. Change the directory to the top level of EnsembleSTDP
+2. Clone the BindsNet repository
 ```
 git clone https://github.com/BindsNET/bindsnet
 ```
-3. Change directory to the top level of bindsnet
+3. Change the directory to the top level of BindsNet
 4. Make bindsnet editable
 ```
 pip install -e .
 ```
 5. Go back to the top level of EnsembleSTDP
-4. Move the modified models.py to bindsnet library
+4. Move the modified models.py to the BindsNet library
 ```
 mv models.py bindsnet/bindsnet/models/models.py
 ```
@@ -51,17 +51,17 @@ python eth_mnist_train.py --model_number 1 --n_neurons 100 --start_image 0 --end
 ```
 
 ### Test sub-model
-After the training, sub-model’s classification accuracy can be tested by replacing "train" with "test" in the above command
+After the training, the sub-model’s classification accuracy can be tested by replacing "train" with "test" in the above command
 ```
 python eth_mnist_test.py --model_number 1 --n_neurons 100 --start_image 0 --end_image 6000
 ```
 
 ### Merge sub-models
-To merge and compress the trained sub-models, the number of compressions and similarity measurements need to be specified. Before running the command below, make sure all the files of sub-models to be merged (model_*.pth, assignments_*.pth, and proportions_*.pth for each model) are in the models_to_merge folder. The example of the command to merge sub-models using MSE and compress 100 neurons:
+To merge and compress the trained sub-models, the number of compressions and similarity measurements need to be specified. Before running the command below, make sure all the sub-model files to be merged (model_*.pth, assignments_*.pth, and proportions_*.pth for each model) are in the models_to_merge folder. The example of the command to merge sub-models using MSE and compress 100 neurons:
 ```
 python3 eth_mnist_merge.py --method mse --n_compression 100
 ```
-* Mean Squired Error (MSE) -> --method mse
+* Mean Squared Error (MSE) -> --method mse
 * Manhattan Distance -> --method manhattan
 * Cosine Similarity -> --method cos
 * Correlation Coefficient -> --method corr
