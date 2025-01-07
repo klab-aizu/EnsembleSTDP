@@ -1,6 +1,6 @@
 # EnsembleSTDP
 This is the source code for the paper:
-- Title: EnsembleSTDP: Distributed in-situ Spike Timing Dependent Plasticity Learning in Spiking Neural Networks
+- Title: EnsembleSTDP: Distributed in-situ Spike Timing Dependent Plasticity Learning in Spiking Neural Networks. \[[PDF](EnsembleSTDP.pdf)\]
 - Authors: Hanyu Yuga and Khanh N. Dang
 - Venue: **2024 IEEE 17th International Symposium on Embedded Multicore/Many-core Systems-on-Chip (MCSoC)**, Dec. 16-19, 2024.
 - URL: [https://ieeexplore.ieee.org/abstract/document/10819516](https://ieeexplore.ieee.org/abstract/document/10819516) 
@@ -112,5 +112,7 @@ Finally, run
 ```
 
 
+## Contact
 
+Khanh N. Dang: khanh@u-aizu.ac.jp
 
